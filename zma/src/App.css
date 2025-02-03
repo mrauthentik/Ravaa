@@ -70,6 +70,7 @@ nav{
     line-height: 28px;
     padding-top: 3vh;
     padding-bottom: 3vh;
+
   }
 }
 .hero-btn{
@@ -94,6 +95,8 @@ nav{
       .hero--btn{
         background-color: transparent;
         border: 1px solid #EE4A24;
-       
+      }
+      .hero--btn:hover{
+        background-color: #FF5A3B;
       }
 }
