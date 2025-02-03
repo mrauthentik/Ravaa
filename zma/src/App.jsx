@@ -5,6 +5,7 @@ import Hero from './Hero'
 import Section from './Section'
 import Footer from './Footer'
 import About from './About'
+import Core from './Core'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Hero />
     <About />
     <Section />
+    <Core />
     <Footer />
     </>
   )
