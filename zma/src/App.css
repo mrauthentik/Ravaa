@@ -71,3 +71,19 @@ nav{
     padding-top: 2vh;
   }
 }
+.hero-btn{
+  display: flex;
+  gap: 3rem;
+  button{
+    background-color: var(--orange);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+  width: 140px;
+  font-size: 1rem;
+  padding: 18px 10px ;
+  text-align: center;
+  }
+}
