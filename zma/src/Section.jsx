@@ -10,7 +10,9 @@ const Section = () => {
           impact. Join us in unlocking the potential of individuals, 
           businesses, and communities worldwide</p>
       </div>
-      <img src={img} alt="" />
+      <div className="vision-image">
+        <img src={img} alt="" />
+      </div>
     </div>
   )
 }
