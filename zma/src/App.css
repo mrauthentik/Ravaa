@@ -191,7 +191,13 @@ nav{
     font-family: var(--mona);
     color: white;
     background-color: var(--orange);
-    width: 50%;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 70%;
+    h2{ 
+      padding-top: 15rem;
+    }
   }
   .vision-image{
     z-index: -3
