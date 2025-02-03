@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 
@@ -180,11 +181,18 @@ nav{
 
   /* Vision Styling */
   .vision{
+    max-width: 100%;
     display: flex;
+    margin: 0;
+    overflow-x: hidden;
   }
   .vision-text{
     padding-left: 3rem;
     font-family: var(--mona);
     color: white;
     background-color: var(--orange);
+    width: 50%;
+  }
+  .vision-image{
+    z-index: -3
   }
