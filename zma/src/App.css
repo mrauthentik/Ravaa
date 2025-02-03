@@ -260,3 +260,66 @@ nav{
       padding-top: 10px;
     }
   }
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+  nav{
+    padding: 16px 20px;
+  }
+  .links{
+    margin-left: 0;
+  }
+  .hero{
+    padding: 20vh;
+  }
+  .hero-text{
+    h1{
+      font-size: 42px;
+      line-height: 54px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .about-container{
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .about-us{
+    padding-left: 0;
+  }
+  .about-image{
+    margin-top: 2rem;
+  }
+  .vision-text{
+    width: 100%;
+    h2{
+      padding-top: 6rem;
+    }
+    p{
+      padding: 1rem;
+    }
+  }
+  .core{
+    padding: 2rem;
+  }
+  .core-flex{
+    flex-direction: column;
+  }
+  .flex{
+    max-width: 100%;
+  } 
+}
