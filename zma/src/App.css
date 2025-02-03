@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 
@@ -197,11 +196,12 @@ nav{
     width: 70%;
     h2{ 
       padding-top: 12rem;
+      padding-left: 2rem;
       font-size: 36px;
       font-weight: 600;
     }
     p{
-      padding-top: 1rem;
+      padding: 1rem 2rem;
     }
   }
   .vision-image{

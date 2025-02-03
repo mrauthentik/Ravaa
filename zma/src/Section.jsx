@@ -3,7 +3,7 @@ const Section = () => {
   return (
     <div className="vision">
       <div className="vision-text">
-        <h2>Our vison</h2>
+        <h2>Our vision</h2>
         <p>At Zen AMA Global Springs, we envision a world where local 
           communities are empowered to drive their own development, 
           leveraging global resources and expertise to create lasting 
