@@ -85,7 +85,7 @@ nav{
   display: flex;
   gap: 1rem;
   justify-content: center;
-  
+  overflow: visible;
  
       button{
       background-color: var(--orange);
@@ -99,6 +99,7 @@ nav{
       padding: 18px 10px ;
       text-align: center;
         font-family: var(--mona);
+      
       }
 
       .hero---btn {
