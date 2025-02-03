@@ -52,16 +52,21 @@ nav{
   background: linear-gradient(to left,rgba(0, 0, 0, 0.778), rgba(0, 0, 0, 0.798)), url('./assets/img (4).png');
   height: 150vh;
   color: white;
+  padding: 35vh ;
 }
 .hero-text{
   font-family: 'Monasans', sans-serif;
   font-optical-sizing: auto;
-  width: 70%;
-  padding: 50px 0;
-  margin: auto;
+  text-align: center;
+
   h1{
     font-size: 72px;
     font-weight: 200;
     line-height: 84px;
+  }
+  p{
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
   }
 }
