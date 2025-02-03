@@ -2,7 +2,9 @@
 const Hero = () => {
   return (
     <div className="hero">
-      <h2>Hero Section starts here</h2>
+      <h1>Bridging the gap between 
+local potential and global 
+opportunities</h1>
     </div>
   )
 }
