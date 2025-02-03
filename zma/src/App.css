@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 :root{
   --orange: #EE4A24;
+  --pink:#FFF0ED;
   --font:"DM Sans", serif;
   --mona:"Mona sans", sans-serif;
 }
@@ -218,4 +219,27 @@ nav{
   }
   .vision-image{
     z-index: -3
+  }
+
+  /* Core Value style */
+
+  .core{
+    font-family: var(--mona);
+    padding: 5rem 4rem;
+     h1{
+      color: var(--orange);
+      padding-bottom: 1rem;
+     }
+     p{
+      color: rgba(0, 0, 0, 0.785);
+      padding-bottom: 3rem;
+     }
+  }
+  .core-flex{
+    display: flex;
+    gap: 10px;
+    font-family: var(--mona);
+  }
+  .flex{
+    background-color: var(--pink);
   }
