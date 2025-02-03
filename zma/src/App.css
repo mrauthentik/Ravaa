@@ -141,3 +141,50 @@ nav{
         }
   }
  
+
+  /* About us styling */
+  .about-container{
+    display: flex;
+    gap: 3rem;
+    padding: 5vh;
+    font-family: var(--mona);
+  }
+  .about-us{
+    margin-top: 7rem;
+    padding-left: 3rem;
+  }
+  .sub-text{
+    color: rgba(0, 0, 0, 0.772);
+    font-size: 29px;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
+  .about-title,.story-title{
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 32px;
+  }
+  .story-title{
+    color: #FF5A3B;
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+  }
+  .about-text,.story-text{
+    color: rgba(0, 0, 0, 0.743);
+    font-weight: 400;
+  }
+  .about-image{
+    margin-top: 4rem;
+    height: 30%;
+  }
+
+  /* Vision Styling */
+  .vision{
+    display: flex;
+  }
+  .vision-text{
+    padding-left: 3rem;
+    font-family: var(--mona);
+    color: white;
+    background-color: var(--orange);
+  }
