@@ -7,6 +7,7 @@ import Footer from './Footer'
 import About from './About'
 import Core from './Core'
 import Team from './Team'
+import Contact from './Contact'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <Section />
     <Core />
     <Team />
+    <Contact />
     <Footer />
     </>
   )
