@@ -37,6 +37,11 @@ nav{
     text-decoration: none;
     font-weight: 500;
   }
+  a:hover{
+    color: var(--orange);
+    transition: 0.2s ease-in-out;
+    font-size: large;
+  }
 }
 .nav-button{
   background-color: var(--orange);
@@ -52,7 +57,9 @@ nav{
   margin-top: -8px;
 }
 .nav-button:hover{
-  background-color: #FF5A3B;
+  background-color: #000000a1;
+  transition: 0.3s ease-in-out;
+  font-size: large;
 }
 
 /* Hero Section  */
@@ -61,12 +68,14 @@ nav{
   height: 150vh;
   color: white;
   padding: 35vh ;
+  overflow: hidden;
 }
 .hero-text{
   font-family: var(--mona);
   font-optical-sizing: auto;
   text-align: center;
   padding-bottom: 1rem;
+  overflow: hidden;
   h1{
     font-size: 72px;
     font-weight: 400;
@@ -104,6 +113,7 @@ nav{
       }
 
       .hero---btn {
+        font-family: var(--mona);
         position: relative;
         overflow: hidden; /* Ensure the pseudo-element doesn't overflow the button */
         z-index: 1; /* Ensure the text is above the pseudo-element */
@@ -264,68 +274,6 @@ nav{
   }
 
 
-
-
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 480px) {
-  nav{
-    padding: 16px 20px;
-  }
-  .links{
-    margin-left: 0;
-  }
-  .hero{
-    padding: 20vh;
-  }
-  .hero-text{
-    h1{
-      font-size: 42px;
-      line-height: 54px;
-    }
-    p{
-      font-size: 14px;
-      line-height: 24px;
-    }
-  }
-  .about-container{
-    flex-direction: column;
-    padding: 2rem;
-  }
-  .about-us{
-    padding-left: 0;
-  }
-  .about-image{
-    margin-top: 2rem;
-  }
-  .vision-text{
-    width: 100%;
-    h2{
-      padding-top: 6rem;
-    }
-    p{
-      padding: 1rem;
-    }
-  }
-  .core{
-    padding: 2rem;
-  }
-  .core-flex{
-    flex-direction: column;
-  }
-  .flex{
-    max-width: 100%;
-  } 
-}
-
 .service{
   margin-top: 1rem;
   display: flex;
@@ -344,6 +292,7 @@ nav{
   /* box-shadow: 0px 0px 2px 10px rgba(0, 0, 0, 0.100); */
   padding: 1rem;
   width: 50%;
+  overflow: hidden;
    h2{
     padding-bottom: 20px;
     color: var(--orange);
@@ -354,10 +303,12 @@ nav{
 .team{
   font-family: var(--mona);
   padding: 5rem;
+  overflow: hidden;
   h1{
     color: var(--orange);
     padding-bottom: 1rem;
     font-size: 35px;
+    overflow: hidden;
   }
   p{
     color: var(--dark);
@@ -366,11 +317,12 @@ nav{
   .team-img{
     display: flex;
     gap: 30px;
-   
-    img{
-      border-top-right-radius:10% ;
-      border-bottom-right-radius:10% ;
-    }
+    overflow: hidden;
+
+    /* img{
+      border-top-right-radius:50px ;
+      border-bottom-right-radius:90px ;
+    } */
     h2{
       padding-top: 2rem;
     }
@@ -380,3 +332,263 @@ nav{
   }
 }
 
+/* Contact Style  */
+
+.contact{
+  padding: 4rem;
+  height: 130vh;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+.contact-block{
+  background-color: rgb(72, 71, 71);
+  font-family: var(--mona);
+  display: flex;
+  padding: 6rem 4rem;
+  height: 95vh;
+  overflow: hidden;
+  border-radius: 50px;
+  
+  h1{
+    color: white;
+    padding-bottom: 3rem;
+  }
+
+  p{
+    color: white;
+    padding-bottom: 3rem;
+  }
+
+}
+form{
+  background-color: var(--pink);
+  border-radius:40px ;
+  padding:2rem;
+  width: 50%;
+  margin-left: 8rem;
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 2rem;
+
+}
+input , [type='email'], [type='tel'], [type='text']{
+  background-color: white;
+  color: black;
+  font-family: var(--mona);
+  display: block;
+  height: 40px ;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  width: 95%;
+  padding: 1rem;
+  font-weight: 600;
+  outline: none;
+}
+textarea{
+  border: none;
+  border-radius: 20px;
+  font-family: var(--mona);
+  padding: 2rem;
+  outline: none;
+}
+.form-btn{
+ border: none; 
+  color: white;
+  background-color: var(--orange);
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  height: 13%;
+  font-weight: 600;
+  font-family: var(--mona);
+  border-radius: 20px;
+}
+.form-btn:hover{
+  background-color: transparent;
+  border: solid 1px var(--orange);
+  color: var(--orange);
+  transition: 0.5s ease-in-out;
+  
+}
+
+.footer{
+  background-color: var(--orange);
+  color: white;
+  font-family: var(--mona);
+  padding: 4rem;
+  overflow: hidden;
+  .footer-flex{
+    display: flex;
+    gap: 30rem;
+    .footer-1{
+      
+      display: block;
+      h1{
+        margin-bottom: 1rem;
+        font-size: 30px;
+      }
+      p{
+        margin-bottom: 1rem;
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      } 
+
+    }
+    .footer-2{
+      display: block;
+      margin-top: 5rem;
+      h1{
+        margin-bottom: 1rem;
+        font-size: 30px;
+      }
+      p{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.footer-logo{
+  margin-bottom: 3rem;
+}
+em{
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: var(--mona);
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+  nav{
+    padding: 16px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  .links{
+    margin-left: 0;
+    display: none;
+  }
+  .hero{
+    padding: 1rem;
+    height: 80vh;
+    background-size: 200%;
+  }
+  .hero-text{
+    margin-top: 7rem;
+    width: 100%;
+    h1{
+      font-size:30px;
+      line-height: 39px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .about-container{
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .about-us{
+    padding-left: 0;
+  }
+
+  .about-image{
+    height: 39%;
+    width: 100px;
+  
+  }
+  .vision{
+    display: block;
+    img{
+      width: 135%;
+      height: 30%;
+    }
+  }
+  .vision-text{
+    width: 100%;
+
+    h2{
+      padding-top: 6rem;
+    }
+    p{
+      padding: 1rem 0rem;
+      margin-right: 30px;
+      margin-bottom: 3rem;
+    }
+  }
+  .core{
+    padding: 2rem;
+  }
+  .core-flex{
+    display: block;
+    flex-direction: column;
+    
+  }
+  .flex{
+    max-width: 100%;
+    margin-bottom: 2rem;
+  } 
+  .service{
+    display: block;
+  }
+  .service-flex{
+    width: 100%;
+    border: none;
+  }
+  .team{
+    display: block;
+    flex-wrap: wrap;
+  }
+  .team-img{
+    padding-right: 0;
+    display: block;
+  }
+  .team-slide{
+  
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    h2{
+      font-size: 20px;
+    }
+    
+  }
+  .contact-block{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    padding: 2rem ;
+    h1{
+      padding-top: 0;
+      font-size: 15px;
+    }
+    p{
+      font-size: 13px;
+    }
+    form{
+      margin: 0;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  .contact{
+    
+    padding:1rem 1rem;
+  }
+ 
+}
