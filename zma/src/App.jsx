@@ -6,6 +6,7 @@ import Section from './Section'
 import Footer from './Footer'
 import About from './About'
 import Core from './Core'
+import Team from './Team'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <About />
     <Section />
     <Core />
+    <Team />
     <Footer />
     </>
   )

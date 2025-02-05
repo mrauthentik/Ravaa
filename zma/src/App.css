@@ -5,6 +5,7 @@
   --pink:#FFF0ED;
   --font:"DM Sans", serif;
   --mona:"Mona sans", sans-serif;
+  --dark: #514E4E
 }
 *{
   margin: 0;
@@ -163,7 +164,7 @@ nav{
     padding-left: 3rem;
   }
   .sub-text{
-    color: rgba(0, 0, 0, 0.772);
+    color: var(--dark);
     font-size: 29px;
     font-weight: 600;
     padding: 1rem 0;
@@ -179,7 +180,7 @@ nav{
     padding-bottom: 0.5rem;
   }
   .about-text,.story-text{
-    color: rgba(0, 0, 0, 0.743);
+    color: var(--dark);
     font-weight: 400;
   }
   .about-image{
@@ -348,4 +349,33 @@ nav{
     color: var(--orange);
     font-weight: 550;
    }
+}
+
+.team{
+  font-family: var(--mona);
+  padding: 5rem;
+  h1{
+    color: var(--orange);
+    padding-bottom: 1rem;
+    font-size: 35px;
+  }
+  p{
+    color: var(--dark);
+    padding-bottom: 3rem;
+  }
+  .team-img{
+    display: flex;
+    gap: 30px;
+   
+    img{
+      border-top-right-radius:10% ;
+      border-bottom-right-radius:10% ;
+    }
+    h2{
+      padding-top: 2rem;
+    }
+   p{
+    padding-top: 0.5rem;
+   }
+  }
 }
