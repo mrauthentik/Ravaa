@@ -37,7 +37,7 @@ const Core = () => {
             </motion.div>
         ))}
       </div>
-      <h1>Our Services</h1>
+      <h1 className="service-header">Our Services</h1>
        <p>At Zen AMA Global Springs Development Services. We provide tailored solutions to <br />
        empower individuals amd organizations with the skills, knowledge, and strategies <br />
        needed for success.
