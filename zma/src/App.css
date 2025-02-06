@@ -193,11 +193,25 @@ nav{
     color: var(--dark);
     font-weight: 400;
   }
-  .about-image{
+  /* .about-image{
     margin-top: 4rem;
     height: 30%;
-    /* margin-right: 5rem; */
     overflow-x: visible;
+  } */
+
+  .about-image {
+    margin-top: 4rem;
+    flex: 1; /* Ensures image container is flexible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 100%; /* Make it responsive */
+    max-width: 500px; /* Prevents it from getting too large on big screens */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 15px;
   }
 
   /* Vision Styling */
@@ -464,11 +478,174 @@ em{
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column; /* Stack elements on smaller screens */
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .about-us {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+
+  .about-image {
+    margin-top: 2rem;
+  }
+
+  .about-image img {
+    max-width: 90%; /* Make it fit within screen width */
+  }
+
+
+}
+.contact {
+  padding: 2rem;
+}
+
+.contact-block {
+  padding: 3rem 1.5rem;
+}
+
+.contact-text p {
+  font-size: 1rem;
+}
+.hero{
+  padding: 1rem;
+  height: 80vh;
+  background-size: 200%;
+}
+.hero-text{
+  margin-top: 7rem;
+  width: 100%;
+  h1{
+    font-size:30px;
+    line-height: 39px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.about-container{
+  flex-direction: column;
+  padding: 2rem;
+}
+.about-us{
+  padding-left: 0;
+}
+
+.about-image{
+  max-width: 90%;
+
+}
+.vision{
+  display: block;
+  img{
+    width: 135%;
+    height: 30%;
+  }
+}
+.vision-text{
+  width: 100%;
+
+  h2{
+    padding-top: 6rem;
+  }
+  p{
+    padding: 1rem 0rem;
+    margin-right: 30px;
+    margin-bottom: 3rem;
+  }
+}
+.core{
+  padding: 2rem;
+}
+.core-flex{
+  display: block;
+  flex-direction: column;
   
+}
+.flex{
+  max-width: 100%;
+  margin-bottom: 2rem;
+} 
+.service{
+  display: block;
+}
+.service-flex{
+  width: 100%;
+  border: none;
 }
 
 @media (max-width: 768px) {
+  .hero{
+    padding: 1rem;
+    height: 80vh;
+    background-size: 200%;
+  }
+  .hero-text{
+    margin-top: 7rem;
+    width: 100%;
+    h1{
+      font-size:30px;
+      line-height: 39px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .about-container{
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .about-us{
+    padding-left: 0;
+  }
 
+  .about-image{
+    max-width: 90%;
+  
+  }
+  .vision{
+    display: block;
+    img{
+      width: 135%;
+      height: 30%;
+    }
+  }
+  .vision-text{
+    width: 100%;
+
+    h2{
+      padding-top: 6rem;
+    }
+    p{
+      padding: 1rem 0rem;
+      margin-right: 30px;
+      margin-bottom: 3rem;
+    }
+  }
+  .core{
+    padding: 2rem;
+  }
+  .core-flex{
+    display: block;
+    flex-direction: column;
+    
+  }
+  .flex{
+    max-width: 100%;
+    margin-bottom: 2rem;
+  } 
+  .service{
+    display: block;
+  }
+  .service-flex{
+    width: 100%;
+    border: none;
+}
 }
 
 @media (max-width: 480px) {
@@ -508,8 +685,7 @@ em{
   }
 
   .about-image{
-    height: 39%;
-    width: 100px;
+    max-width: 90%;
   
   }
   .vision{
