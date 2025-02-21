@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import img1 from './assets/img (2).png';
 import img2 from './assets/img (3).png';
+import img3 from './assets/img.png'
 
 const Team = () => {
   const cardVariants = {
@@ -33,7 +34,7 @@ const Team = () => {
         {[
           { img: img1, name: 'Maria Asuelimen', title: 'Founder & CEO' },
           { img: img2, name: 'Nomsey Okosa', title: 'Executive Director Monitoring Evaluation and Learning' },
-          { img: img2, name: 'Richard Eze', title: 'Executive Director Admin and Operations' }
+          { img: img3, name: 'Richard Eze', title: 'Executive Director Admin and Operations' }
         ].map((item, index) => (
           <motion.div
             key={index}
