@@ -399,7 +399,7 @@ input , [type='email'], [type='tel'], [type='text']{
   height: 40px ;
   border: none;
   margin-bottom: 10px;
-  border-radius: 20px;
+  border-radius: 40px;
   width: 95%;
   padding: 1rem;
   font-weight: 600;
@@ -427,7 +427,7 @@ textarea{
 .form-btn:hover{
   background-color: transparent;
   border: solid 1px var(--orange);
-  color: var(--orange);
+  color: white;
   transition: 0.5s ease-in-out;
   
 }
@@ -525,6 +525,42 @@ em {
       width: 100%;
     }
   }
+
+  .contact{
+    height: 150vh;
+  }
+  .contact-block{
+    height: 140vh;
+    .form-btn{
+      height: 50px;
+    }
+    .contact-form{
+      height: 100vh;
+    }
+    textarea{
+      width: 96%;
+      margin-right: 20px;
+    }
+  }
+  .contact-text{
+    p{
+      margin-top: -2rem;
+    }
+  }
+  .contact-text p,h1{
+    text-align: left;
+    padding-left: 4px;
+   font-size: 20px;
+  }
+  .contact-form{
+    background-color: transparent;
+    width: 110%;
+    margin-left: 0;
+    margin-top: 1rem;
+    input{
+      height: 60px;
+    }
+  }
   .footer {
     padding: 2rem; /* Reduce padding on smaller screens */
     text-align: left; /* Center text for better readability */
@@ -559,6 +595,40 @@ em {
     }
     .vision-image{
       width: 100%;
+    }
+  }
+  .contact{
+    height: 150vh;
+  }
+  .contact-block{
+    height: 140vh;
+    .form-btn{
+      height: 50px;
+    }
+    .contact-form{
+      height: 100vh;
+    }
+    textarea{
+      width: 100%;
+    }
+  }
+  .contact-text{
+    p{
+      margin-top: -2rem;
+    }
+  }
+  .contact-text p,h1{
+    text-align: left;
+    padding-left: 4px;
+   font-size: 20px;
+  }
+  .contact-form{
+    background-color: transparent;
+    width: 110%;
+    margin-left: 0;
+    margin-top: 1rem;
+    input{
+      height: 60px;
     }
   }
   .footer {
