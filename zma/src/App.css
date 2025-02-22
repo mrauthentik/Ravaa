@@ -454,6 +454,9 @@ textarea{
   flex: 1; /* Makes both sections flexible */
   min-width: 250px; /* Ensures they don’t shrink too much */
 }
+.footer-2{
+  margin-top: 6rem;
+}
 
 .footer-1 h1,
 .footer-2 h1 {
