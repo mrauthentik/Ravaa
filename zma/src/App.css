@@ -61,7 +61,7 @@ nav{
 
 /* Hero Section  */
 .hero{
-  background: linear-gradient(to left,rgba(0, 0, 0, 0.868), rgba(0, 0, 0, 0.996)), url('./assets/pic (1).JPG');
+  background: linear-gradient(to left,rgba(0, 0, 0, 0.868), rgba(0, 0, 0, 0.732)), url('./assets/pic (1).JPG');
   height: 150vh;
   color: white;
   padding: 35vh ;
