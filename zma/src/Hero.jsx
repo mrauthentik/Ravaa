@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 // Parent container animations
 const containerVariants = {
@@ -70,7 +71,7 @@ const Hero = () => {
           whileHover={{ scale: 1.1 }} 
           whileTap={{ scale: 0.9 }}
         >
-          Get in touch
+        <Link to="contact">Get in touch</Link>  
         </motion.button>
       </motion.div>
     </motion.div>

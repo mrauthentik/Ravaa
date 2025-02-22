@@ -17,7 +17,7 @@ function App() {
     <Header />
     <Hero id="hero" />
     <About id="about" />
-    <Section id="services"/>
+    <Section />
     <Core id="core" />
     <Team id="team"/>
     <Contact id="contact" />

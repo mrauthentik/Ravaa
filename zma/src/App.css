@@ -55,12 +55,7 @@ nav{
   font-size: 1rem;
   padding: 18px 10px ;
   text-align: center;
-  margin-top: -8px;
-}
-.nav-button:hover{
-  background-color: #000000a1;
-  transition: 0.3s ease-in-out;
-  font-size: large;
+  margin-top: 0px;
 }
 
 /* Hero Section  */
@@ -789,24 +784,7 @@ em {
   .service-flex{
     width: 100%;
     border: none;
-  /* .team{
-    display: block;
-    flex-wrap: wrap;
-  }
-  .team-img{
-    padding-right: 0;
-    display: block;
-  }
-  .team-slide{
   
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    h2{
-      font-size: 20px;
-    }
-    
-  } */
   .contact-block{
     width: 100%;
     display: block;
@@ -850,7 +828,6 @@ em {
 
 
 /*Header Styles*/
-/* General Styles */
 header {
   position: fixed;
   width: 100%;
@@ -875,20 +852,23 @@ nav {
 .nav-links {
   display: flex;
   gap: 20px;
-}
+  cursor: pointer;
+  padding-right: 2rem;
+  }
 
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-.nav-btn{
-  color: white;
-}
+
+
 
 .nav-links a:hover {
   color: var(--orange);
+}
+.nav-text{
+  padding-top: 1rem;
+}
+.nav-button:hover{
+  background-color: black;
+  transition: 0.4s ease-in-out;
+  color: white;
 }
 
 /* Mobile Menu Button */
