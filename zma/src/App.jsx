@@ -1,5 +1,7 @@
 
 import './App.css'
+import { RouterProvider} from 'react-router-dom'
+import Router from './Routes/Router'
 import Header from './Header'
 import Hero from './Hero'
 import Section from './Section'
@@ -13,13 +15,14 @@ function App() {
 
   return (
     <>
+    {/* <RouterProvider router={Router}/> */}
     <Header />
-    <Hero />
-    <About />
-    <Section />
-    <Core />
-    <Team />
-    <Contact />
+    <Hero id="hero" />
+    <About id='about' />
+    <Section id="services"/>
+    <Core id="core" />
+    <Team id="team"/>
+    <Contact id="contact" />
     <Footer />
     </>
   )
