@@ -64,7 +64,7 @@ nav{
 
 /* Hero Section  */
 .hero{
-  background: linear-gradient(to left,rgba(0, 0, 0, 0.868), rgba(0, 0, 0, 0.878)), url('./assets/pic (1).JPG');
+  background: linear-gradient(to left,rgba(0, 0, 0, 0.868), rgba(0, 0, 0, 0.996)), url('./assets/pic (1).JPG');
   height: 150vh;
   color: white;
   padding: 35vh ;
@@ -199,7 +199,11 @@ nav{
     height: 30%;
     overflow-x: visible;
   } */
-
+.about-img{
+  width: 140%;
+  height: 40%;
+  padding-top: 2rem;
+}
   .about-image {
     margin-top: 4rem;
     flex: 1; /* Ensures image container is flexible */
@@ -771,7 +775,7 @@ em{
  
 }
 }
-/* 📌 Make it responsive on smaller screens */
+/*  Make it responsive on smaller screens */
 @media (max-width: 768px) {
   .team {
     padding: 3rem 1.5rem;

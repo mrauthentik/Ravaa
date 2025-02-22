@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import img from "./assets/img (5).png";
+import img from "./assets/Rectangle 2.png";
 
 // Parent container animation
 const containerVariants = {
@@ -65,7 +65,7 @@ const About = () => {
           Education, Governance, and Economic Development.
         </motion.div>
       </motion.div>
-
+       <img src={img} alt="" className="about-img" />
       {/* Right Section - Image */}
       <motion.div className="about-image" variants={imageVariants}>
         <img src={img} alt="About Us" />

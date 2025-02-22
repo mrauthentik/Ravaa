@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import img from "./assets/img (1).png";
+import img from "./assets/Rectangle 12.png";
+
 
 // Parent container animation
 const containerVariants = {
