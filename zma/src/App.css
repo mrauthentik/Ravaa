@@ -509,9 +509,13 @@ em {
     width: 100%;
   }
   .vision{
+    text-align: left;
     .vision-text{
       padding-top: 5rem;
       padding-bottom: -4rem;
+      h2{
+        padding-left:0 ;
+      }
     }
     .vision-image{
       width: 100%;
@@ -543,6 +547,19 @@ em {
   .about-title,.story-title,.sub-text,
   .about-text,.story-text{
     text-align: left;
+  }
+  .vision{
+    text-align: left;
+    .vision-text{
+      padding-top: 5rem;
+      padding-bottom: -4rem;
+      h2{
+        padding-left: 0rem;
+      }
+    }
+    .vision-image{
+      width: 100%;
+    }
   }
   .footer {
     padding: 1.5rem; /* Further reduce padding on mobile */
