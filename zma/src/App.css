@@ -500,6 +500,10 @@ em {
 }
 
 @media (max-width: 768px) {
+  .about-title,.story-title,.sub-text,
+  .about-text,.story-text{
+    text-align: left;
+  }
   .about-img{
     margin: auto;
     width: 100%;
@@ -536,6 +540,10 @@ em {
 }
 
 @media (max-width: 480px) {
+  .about-title,.story-title,.sub-text,
+  .about-text,.story-text{
+    text-align: left;
+  }
   .footer {
     padding: 1.5rem; /* Further reduce padding on mobile */
   }
