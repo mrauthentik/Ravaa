@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaRegTimesCircle } from "react-icons/fa";
 import logo from "./assets/logo (1).png";
 
 const Header = () => {
@@ -25,13 +25,16 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button className="menu-button" onClick={() => setIsOpen(true)}>
           <FaBars />
+        
         </button>
 
         {/* Mobile Navigation Menu */}
         <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
           {/* Close Button */}
           <button className="close-button" onClick={() => setIsOpen(false)}>
-            <FaTimes  />
+            {/* <FaTimes  /> */}
+            {/* <FaTimesCircle /> */}
+            <FaRegTimesCircle />
           </button>
 
           {/* Mobile Links */}
