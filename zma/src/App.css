@@ -460,6 +460,11 @@ textarea{
   margin-bottom: 1rem;
   font-size: 24px;
 }
+.footer-1 a{
+ color: white;
+ text-decoration: none;
+ cursor: pointer;
+}
 
 .footer-1 p,
 .footer-2 p {
