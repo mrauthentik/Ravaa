@@ -17,7 +17,7 @@ const Header = () => {
         {/* Desktop Navigation */}
         <div className="nav-links">
           <Link to="about" smooth={true} duration={500}className="nav-text">About us</Link>
-          <Link to="services" smooth={true} duration={500} className="nav-text">Our services</Link>
+          <Link to="core" smooth={true} duration={500} className="nav-text">Our services</Link>
           <Link to="team" smooth={true} duration={500} className="nav-text">Our team</Link>
           <Link to="contact" smooth={true} duration={500} className="nav-button header-btn">Get in touch</Link>
         </div>
@@ -40,7 +40,7 @@ const Header = () => {
           {/* Mobile Links */}
           <div className="mobile-links">
             <Link to="about" smooth={true} duration={500} onClick={() => setIsOpen(false)}>About us</Link>
-            <Link to="services" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Our services</Link>
+            <Link to="core" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Our services</Link>
             <Link to="team" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Our team</Link>
             <Link to="contact" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Get in touch</Link>
           </div>

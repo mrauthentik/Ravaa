@@ -62,7 +62,7 @@ const Hero = () => {
           whileHover={{ scale: 1.1 }} 
           whileTap={{ scale: 0.9 }}
         >
-          Our services
+         <Link to="core">Our services</Link> 
         </motion.button>
 
         <motion.button 
