@@ -527,7 +527,7 @@ em {
   }
 
   .contact{
-    height: 150vh;
+    height: 100vh;
   }
   .contact-block{
     height: 140vh;
@@ -555,10 +555,11 @@ em {
   .contact-form{
     background-color: transparent;
     width: 110%;
-    margin-left: 0;
+    padding: 0 1rem;
     margin-top: 1rem;
     input{
       height: 60px;
+      width: 100%;
     }
   }
   .footer {
@@ -598,7 +599,7 @@ em {
     }
   }
   .contact{
-    height: 150vh;
+    height: 120vh;
   }
   .contact-block{
     height: 140vh;
@@ -607,6 +608,9 @@ em {
     }
     .contact-form{
       height: 100vh;
+      margin: auto;
+      align-items: center;
+      align-self: center;
     }
     textarea{
       width: 100%;
