@@ -432,54 +432,102 @@ textarea{
   
 }
 
-.footer{
+.footer {
   background-color: var(--orange);
   color: white;
   font-family: var(--mona);
   padding: 4rem;
   overflow: hidden;
-  .footer-flex{
-    display: flex;
-    gap: 30rem;
-    .footer-1{
-      
-      display: block;
-      h1{
-        margin-bottom: 1rem;
-        font-size: 30px;
-      }
-      p{
-        margin-bottom: 1rem;
-        a{
-          color: white;
-          text-decoration: none;
-        }
-      } 
-
-    }
-    .footer-2{
-      display: block;
-      margin-top: 5rem;
-      h1{
-        margin-bottom: 1rem;
-        font-size: 30px;
-      }
-      p{
-        margin-bottom: 1rem;
-      }
-    }
-  }
 }
-.footer-logo{
+
+/* Flex container */
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem; /* Reduce gap for better spacing */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Footer Sections */
+.footer-1,
+.footer-2 {
+  flex: 1; /* Makes both sections flexible */
+  min-width: 250px; /* Ensures they don’t shrink too much */
+}
+
+.footer-1 h1,
+.footer-2 h1 {
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.footer-1 p,
+.footer-2 p {
+  margin-bottom: 1rem;
+}
+
+/* Footer Logo */
+.footer-logo {
   margin-bottom: 3rem;
 }
-em{
+
+/* Small Text */
+em {
   padding-top: 4rem;
   margin-bottom: 2rem;
   font-family: var(--mona);
   font-style: normal;
   font-weight: 200;
   font-size: 12px;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .footer-flex {
+    gap: 3rem; /* Reduce spacing on tablets */
+  }
+  .footer{
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem; /* Reduce padding on smaller screens */
+    text-align: left; /* Center text for better readability */
+  }
+
+  .footer-flex {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: left; /* Center align content */
+    gap: 2rem; /* Reduce gap */
+  }
+
+  .footer-1,
+  .footer-2 {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem; /* Further reduce padding on mobile */
+  }
+
+  .footer-flex {
+    gap: 1.5rem; /* Reduce spacing for mobile screens */
+  }
+
+  .footer-1 h1,
+  .footer-2 h1 {
+    font-size: 20px; /* Reduce heading size */
+  }
+
+  .footer-1 p,
+  .footer-2 p {
+    font-size: 14px; /* Reduce paragraph size */
+  }
 }
 
 /* Responsive Design */
