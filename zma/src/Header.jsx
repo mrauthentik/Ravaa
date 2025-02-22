@@ -19,7 +19,7 @@ const Header = () => {
           <Link to="about" smooth={true} duration={500}>About us</Link>
           <Link to="services" smooth={true} duration={500}>Our services</Link>
           <Link to="team" smooth={true} duration={500}>Our team</Link>
-          <Link to="contact" smooth={true} duration={500}>Get in touch</Link>
+          <Link to="contact" smooth={true} duration={500} className="nav-button nav-btn">Get in touch</Link>
         </div>
 
         {/* Mobile Menu Button */}

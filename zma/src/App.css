@@ -827,9 +827,12 @@ nav {
   font-size: 18px;
   transition: color 0.3s ease;
 }
+.nav-btn{
+  color: white;
+}
 
 .nav-links a:hover {
-  color: #007bff;
+  color: var(--orange);
 }
 
 /* Mobile Menu Button */

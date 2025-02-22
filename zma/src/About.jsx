@@ -69,7 +69,7 @@ const About = () => {
        <img src={img} alt="" className="about-img" />
       {/* Right Section - Image */}
       <motion.div className="about-image" variants={imageVariants}>
-        <img src={img} alt="About Us" />
+        {/* <img src={img} alt="About Us" /> */}
       </motion.div>
     </motion.div>
   );
