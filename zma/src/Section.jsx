@@ -53,7 +53,7 @@ const Section = () => {
 
       {/* Right Section - Image */}
       <motion.div className="vision-image" variants={imageVariants}>
-        <img src={img} alt="Our Vision" />
+        <img src={img} alt="Our Vision" className="vision-img"/>
       </motion.div>
     </motion.div>
   );

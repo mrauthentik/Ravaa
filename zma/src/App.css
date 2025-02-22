@@ -190,11 +190,7 @@ nav{
     color: var(--dark);
     font-weight: 400;
   }
-  /* .about-image{
-    margin-top: 4rem;
-    height: 30%;
-    overflow-x: visible;
-  } */
+
 .about-img{
   width: 140%;
   height: 40%;
@@ -219,12 +215,15 @@ nav{
   .vision{
     max-width: 100%;
     display: flex;
-    margin: 0;
-    overflow-x: hidden;
+    margin-top: 2rem;
+    overflow: hidden;
     width: 100%;
   }
   .vision-text{
+   margin-top: -7rem;
+   padding-top: -10rem;
     padding-left: 3rem;
+    padding-bottom: 2rem;
     font-family: var(--mona);
     color: white;
     background-color: var(--orange);
@@ -245,7 +244,12 @@ nav{
     }
   }
   .vision-image{
-    z-index: -3
+    z-index: -3;
+    width:80%;
+  }
+  .vision-img{
+    width: 100%;
+    height: 100%;
   }
 
   /* Core Value style */
@@ -495,6 +499,23 @@ em {
 }
 
 @media (max-width: 768px) {
+  .about-img{
+    margin: auto;
+    width: 100%;
+  }
+  .vision{
+    .vision-text{
+      padding-top: 5rem;
+      padding-bottom: -4rem;
+    }
+    .vision-image{
+      width: 100%;
+      
+    }
+    img{
+      width: 100%;
+    }
+  }
   .footer {
     padding: 2rem; /* Reduce padding on smaller screens */
     text-align: left; /* Center text for better readability */
@@ -600,10 +621,7 @@ em {
 }
 .vision{
   display: block;
-  img{
-    width: 135%;
-    height: 30%;
-  }
+  
 }
 .vision-text{
   width: 100%;
