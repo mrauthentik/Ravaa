@@ -766,6 +766,7 @@ em {
     margin-top: 8rem;
     width: 100%;
     text-align: left;
+    padding-left: 1rem;
     h1{
       font-size:30px;
       line-height: 39px;
