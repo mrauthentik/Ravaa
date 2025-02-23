@@ -166,6 +166,7 @@ nav{
     gap: 3rem;
     padding: 5vh;
     font-family: var(--mona);
+    overflow: hidden;
   }
   .about-us{
     margin-top: 7rem;
@@ -758,12 +759,13 @@ em {
 @media (max-width: 768px) {
   .hero{
     padding: 1rem;
-    height: 80vh;
+    height: 90vh;
     background-size: 200%;
   }
   .hero-text{
-    margin-top: 7rem;
+    margin-top: 8rem;
     width: 100%;
+    text-align: left;
     h1{
       font-size:30px;
       line-height: 39px;
@@ -771,7 +773,11 @@ em {
     p{
       font-size: 14px;
       line-height: 24px;
+      width: 80%;
     }
+  }
+  .hero-btn{
+    margin-bottom: 3rem;
   }
   .about-container{
     flex-direction: column;
@@ -844,6 +850,7 @@ em {
   .hero-text{
     margin-top: 7rem;
     width: 100%;
+    text-align: left;
     h1{
       font-size:30px;
       line-height: 39px;
