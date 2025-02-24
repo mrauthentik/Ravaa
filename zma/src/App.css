@@ -757,6 +757,7 @@ em {
  }
 }
 @media (max-width: 768px) {
+
   .hero{
     padding: 1rem;
     height: 90vh;
@@ -898,7 +899,7 @@ em {
   .core-flex{
     display: block;
     flex-direction: column;
-    
+    overflow-y: hidden;
   }
   .flex{
     max-width: 100%;
@@ -910,6 +911,7 @@ em {
   .service-flex{
     width: 100%;
     border: none;
+    overflow-y: hidden;
   
   .contact-block{
     width: 100%;
@@ -926,7 +928,7 @@ em {
     form{
       margin: 0;
       width: 100%;
-      border-radius: 10px;
+      border-radius: 5px;
     }
   }
   .contact{
