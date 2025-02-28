@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from "react-scroll";
 import logo from './assets/logo (2).png'
 const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -39,7 +40,7 @@ const Footer = ()=> {
             <motion.div variants={textVariants} className="footer-1" >
                 <img src={logo} alt="logo" className='footer-logo'/>
                 <motion.h1 variants={titleVariants}>Contacts</motion.h1>
-                <motion.p><a href="mailto:zenama@gmail.com">Zenama@gmail.com</a></motion.p>
+                <motion.p><a href="mailto:zenama@gmail.com">info@zenama.ng</a></motion.p>
                 <motion.p><a href="tel:+23418123448901">+2348123448901</a></motion.p>
                 <motion.p>Office Address: No.2 ama road, Jahi District <br />
                  Gwarinpa, Abuja, Nigeria.
@@ -47,10 +48,10 @@ const Footer = ()=> {
             </motion.div>
             <motion.div className="footer-2" variants={textVariants}>
                 <motion.h1>Useful links</motion.h1>
-                <motion.p>Home</motion.p>
-                <motion.p>About us</motion.p>
-                <motion.p>Our services</motion.p>
-                <motion.p>Get in touch</motion.p>
+                <motion.p> <Link to='/' smooth={true} duration={500}>Home</Link></motion.p>
+                <motion.p> <Link to='about' smooth={true} duration={500} >About us</Link> </motion.p>
+                <motion.p> <Link to='core' smooth={true} duration={500}>Our services</Link> </motion.p>
+                <motion.p> <Link to='contact' smooth={true} duration={500}>Get in touch</Link> </motion.p>
             </motion.div>
              </motion.div>
 
