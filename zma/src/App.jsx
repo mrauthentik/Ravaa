@@ -1,4 +1,5 @@
-
+import {ToastContainer,toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
 import Header from './Header'
 import Hero from './Hero'
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <ToastContainer />
     {/* <RouterProvider router={Router}/> */}
     <Header />
     <Hero id="hero" />
