@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
+import {useForm, ValidationError} from '@formspree/react';
 
 const Contact = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
+  const [state, handleSubmit] = useForm("mgvogrog");
 
   return (
     <motion.div 
