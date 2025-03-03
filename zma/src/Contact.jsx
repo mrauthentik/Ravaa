@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import {toast} from 'react-toastify';
 import {useForm, ValidationError} from '@formspree/react';
 
 const Contact = () => {
@@ -7,7 +8,22 @@ const Contact = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
   const [state, handleSubmit] = useForm("mgvogrog");
+ 
+  const success = () =>{
+    toast.success("Success! 🎉", {
+      position: "top-right",
+      autoClose: 3000, // 3 seconds
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "dark",
+    })
+  }
 
+  if (state.succeeded) {
+    return success();
+  }
   return (
     <motion.div 
       className="contact"
@@ -26,8 +42,12 @@ const Contact = () => {
         </motion.div>
 
         <motion.form action="#" variants={fadeInUp} className="contact-form">
-          <input type="text" placeholder="Full name" />
-          <input type="email" placeholder="Email address" />
+          <input type="text" placeholder="Full name" name="name" id="name" />
+           <ValidationError
+            prefix="Name"
+            field="name"
+            errors={state.errors} />
+          <input type="email" placeholder="Email address" id="email" name="email" />
           <input type="tel" placeholder="Phone number" />
           <textarea cols="50" rows="4" placeholder="Message"></textarea>
           <button type="submit" className="form-btn">Submit inquiry</button>
