@@ -41,16 +41,32 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <motion.form action="#" variants={fadeInUp} className="contact-form">
+        <motion.form action="https://formspree.io/f/mgvogrog" onSubmit={handleSubmit} variants={fadeInUp} className="contact-form">
           <input type="text" placeholder="Full name" name="name" id="name" />
            <ValidationError
             prefix="Name"
             field="name"
             errors={state.errors} />
+
           <input type="email" placeholder="Email address" id="email" name="email" />
-          <input type="tel" placeholder="Phone number" />
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors} />
+
+          <input type="tel" placeholder="Phone number" id="number" name="number" />
+          <ValidationError
+            prefix="Number"
+            field="number"
+            errors={state.errors} />
+
           <textarea cols="50" rows="4" placeholder="Message"></textarea>
-          <button type="submit" className="form-btn">Submit inquiry</button>
+          <ValidationError
+            prefix="Message"
+            field="mesaage"
+            errors={state.errors} />
+
+          <button type="submit" disabled={state.submitting} className="form-btn">Submit inquiry</button>
         </motion.form>
       </motion.div>
     </motion.div>
