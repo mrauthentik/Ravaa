@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { useScrollTo } from "react-screen-scroll";
 
 // Parent container animations
 const containerVariants = {
@@ -33,7 +34,9 @@ const buttonVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } },
 };
 
+
 const Hero = () => {
+  const scrollTo = useScrollTo();
   return (
     <motion.div 
       className="hero"
@@ -62,7 +65,7 @@ const Hero = () => {
           whileHover={{ scale: 1.1 }} 
           whileTap={{ scale: 0.9 }}
         >
-         <Link to="core">Our services</Link> 
+         <Link to="" onClick={()=> scrollTo(3000)} >Our services</Link> 
         </motion.button>
 
         <motion.button 
