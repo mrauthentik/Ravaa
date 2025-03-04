@@ -93,19 +93,19 @@ const Contact = () => {
         </motion.div>
 
         <motion.form action="https://formspree.io/f/mgvogrog" onSubmit={handleSubmit} variants={fadeInUp} className="contact-form">
-          <input type="text" placeholder="Full name" name="name" id="name" />
+          <input type="text" required placeholder="Full name" name="name" id="name" />
            <ValidationError
             prefix="Name"
             field="name"
             errors={state.errors} />
 
-          <input type="email" placeholder="Email address" id="email" name="email" />
+          <input type="email" required placeholder="Email address" id="email" name="email" />
           <ValidationError
             prefix="Email"
             field="email"
             errors={state.errors} />
 
-          <input type="tel" placeholder="Phone number" id="number" name="number" />
+          <input type="tel" required placeholder="Phone number" id="number" name="number" />
           <ValidationError
             prefix="Number"
             field="number"
