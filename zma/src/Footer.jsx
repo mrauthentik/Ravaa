@@ -44,9 +44,7 @@ const Footer = ()=> {
                 <motion.h1 variants={titleVariants}>Contacts</motion.h1>
                 <motion.p><a href="mailto:zenama@gmail.com">info@zenama.ng</a></motion.p>
                 <motion.p><a href="tel:+23418123448901">+2348123448901</a></motion.p>
-                <motion.p>Office Address: No.2 ama road, Jahi District <br />
-                 Gwarinpa, Abuja, Nigeria.
-                </motion.p>
+                <motion.p>No.5 Malta Street, Efab Metropolis, Karsana District, Abuja.</motion.p>
             </motion.div>
             <motion.div className="footer-2" variants={textVariants}>
                 <motion.h1>Useful links</motion.h1>
