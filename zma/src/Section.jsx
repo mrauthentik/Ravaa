@@ -44,10 +44,8 @@ const Section = () => {
         <motion.h2 variants={titleVariants}>Our Vision</motion.h2>
         
         <motion.p variants={textVariants} whileHover={{ scale: 1.05 }}>
-          At Zen AMA Global Springs, we envision a world where local communities 
-          are empowered to drive their own development, leveraging global resources 
-          and expertise to create lasting impact. Join us in unlocking the potential 
-          of individuals, businesses, and communities worldwide.
+        At Zen AMA Global Springs Development, we envision a world where local communities are empowered to drive their own development, 
+        leveraging global resources and expertise to create lasting impact.
         </motion.p>
       </motion.div>
 
