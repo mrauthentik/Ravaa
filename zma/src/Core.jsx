@@ -81,9 +81,9 @@ const Core = () => {
 
       <div className="service">
         {[
-          { img: img5, title: 'Capacity building', text: "We equip individuals and organizations with skills, knowledge and expertise needed to excel in their fields." },
-          { img: img6, title: 'Local Business Infrastructure Strengthening', text: "We help individuals and organizations with the skills, knowledge, and expertise needed to excel in their fields." },
-          { img: img7, title: 'Development Consulting', text: "With expertise spanning Global Health, Education, Governance, and Economic Development, we provide strategic guidance and support to organizations navigating complex development challenges." }
+          { img: img5, title: 'Capacity building', text: " Equipping individuals and organizations with the skills, knowledge, and expertise needed to excel in their fields." },
+          { img: img6, title: 'Local Business Infrastructure Strengthening', text: "Supporting businesses with tailored strategies to enhance their operational capacity and long-term sustainability." },
+          { img: img7, title: 'Development Consulting', text: "Providing strategic guidance and support to organizations navigating complex development challenges." }
         ].map((item, index) => (
           <motion.div 
             key={index}
