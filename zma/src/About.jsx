@@ -49,7 +49,7 @@ const About = () => {
         </motion.div>
 
         <motion.div className="about-text" variants={textVariants} whileHover={{ scale: 1.05 }}>
-        At Zen AMA Global Springs Development Services, we empower sustainable development by bridging the gap between local potential and global opportunities. As a dynamic development consulting firm, we specialize in helping individuals, businesses, and communities thrive in an increasingly interconnected world.
+        At Zen AMA Global Springs Development Services, we empower sustainable development by bridging the gap between local potentials and global opportunities. As a dynamic development consulting firm, we specialize in helping individuals, businesses, and communities thrive in an increasingly interconnected world.
         </motion.div>
 
         <motion.div className="story-title" variants={titleVariants}>
