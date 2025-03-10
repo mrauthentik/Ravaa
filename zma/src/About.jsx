@@ -57,7 +57,7 @@ const About = () => {
         </motion.div>
 
         <motion.div className="story-text" variants={textVariants} whileHover={{ scale: 1.05 }}>
-        Founded on the principles of collaboration, innovation, and sustainability, our team of experts brings a wealth of experience in global development. We have partnered with grassroot organizations, private sector leaders, and international institutions to drive meaningful change across Global Health, Education, Governance, and Economic Development.
+        Founded on the principles of collaboration, innovation, and sustainability, our team of experts bring a wealth of experience in global development. We have partnered with grassroot organizations, private sector leaders, and international institutions to drive meaningful change across Global Health, Education, Governance, and Economic Development.
         </motion.div>
       </motion.div>
        <img src={img} alt="" className="about-img" />
