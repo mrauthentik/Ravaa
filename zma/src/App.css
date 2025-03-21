@@ -322,6 +322,9 @@ nav{
 }
 .organization{
   margin-top: 4rem;
+  h1{
+    font-size: 36px;
+  }
 }
 .org-img{
   width: 80%;
@@ -338,6 +341,9 @@ nav{
 @media (max-width: 1024px) {
   .organization {
     margin-top: 3rem;
+    h1{
+
+    }
   }
 
   .org-img {
