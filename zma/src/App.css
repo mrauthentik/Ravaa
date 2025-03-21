@@ -320,6 +320,52 @@ nav{
     font-weight: 550;
    }
 }
+.organization{
+  margin-top: 4rem;
+}
+.org-img{
+  width: 80%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.org-img {
+  width: 80%;
+  height: auto;
+  border-radius: 30px;
+}
+
+@media (max-width: 1024px) {
+  .organization {
+    margin-top: 3rem;
+  }
+
+  .org-img {
+    width: 90%; /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .organization {
+    margin-top: 2rem;
+  }
+
+  .org-img {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .organization {
+    margin-top: 1.5rem;
+  }
+
+  .org-img {
+    width: 100%; /* Ensure it fits within the screen */
+    border-radius: 15px; /* Reduce border radius for smaller screens */
+  }
+}
+
 
 .team{
   font-family: var(--mona);

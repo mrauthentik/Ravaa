@@ -6,6 +6,7 @@ import img4 from './assets/icons (4).png';
 import img5 from './assets/icons (1).png';
 import img6 from './assets/icons (2).png';
 import img7 from './assets/icons (3).png';
+import img from './assets/team.JPG'
 
 // Motion variants
 const cardVariants = {
@@ -100,6 +101,31 @@ const Core = () => {
           </motion.div>
         ))}
       </div>
+       <div className="organization">
+        <motion.h1 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }}
+          variants={cardVariants}
+        >
+         Organization Structure
+        </motion.h1>
+
+        <motion.p 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }}
+          variants={cardVariants}
+        >
+         Zen AMA Global Springs Development (Zen AMA GSD) Under this, Africa’;s Institute for leadership Development (AILD) <br />
+          a subsidiary of Zen AMA GSD AILD produces MLC conference,training and certificate programs Under Zen AMA GSD <br />
+          provides entrepreneurship programs such as grants to Women Entrepreneurs and training through WIMBIZ.
+
+        </motion.p>
+        <motion.div className="org-img">
+        <img src={img} alt="Team image" className='org-img' />
+        </motion.div>
+       </div>
     </div>
   );
 };
