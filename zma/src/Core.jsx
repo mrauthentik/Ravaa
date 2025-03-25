@@ -108,7 +108,7 @@ const Core = () => {
           viewport={{ once: true }}
           variants={cardVariants}
         >
-         Organization Structure
+       Partnerships and Subsidiaries
         </motion.h1>
 
         <motion.p 
@@ -117,9 +117,9 @@ const Core = () => {
           viewport={{ once: true }}
           variants={cardVariants}
         >
-         Zen AMA Global Springs Development (Zen AMA GSD) Under this, Africa’;s Institute for leadership Development (AILD) <br />
-          a subsidiary of Zen AMA GSD AILD produces MLC conference,training and certificate programs Under Zen AMA GSD <br />
-          provides entrepreneurship programs such as grants to Women Entrepreneurs and training through WIMBIZ.
+        Zen AMA Global Springs Development partners with Women in Management, Business, and Public Service (WIMBIZ) to provide training, entrepreneurship programs, and business grants to women entrepreneurs in Nigeria. <br />
+
+        Our subsidiary, Africa’s Institute for Leadership Development (AILD), organizes the Magnificent Leadership Conference, training programs, and certification courses to empower future leaders.
 
         </motion.p>
         <motion.div className="org-img">
