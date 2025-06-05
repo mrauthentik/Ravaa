@@ -161,7 +161,7 @@ nav{
  
 
   /* About us styling */
-  .about-container{
+  .about-container, .testimonial{
     display: flex;
     gap: 3rem;
     padding: 5vh;
@@ -178,7 +178,7 @@ nav{
     font-weight: 600;
     padding: 1rem 0;
   }
-  .about-title,.story-title{
+  .about-title,.story-title,.testimonial-title{
     color: var(--orange);
     font-weight: 600;
     font-size: 32px;
@@ -403,6 +403,11 @@ nav{
     padding-top: 0.5rem;
    }
   }
+}
+
+/* Testimonials Styles */
+.testimonial{
+  display: grid;
 }
 
 /* Contact Style  */

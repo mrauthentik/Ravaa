@@ -4,6 +4,7 @@ import Section from "../Section";
 import Contact from "../Contact";
 import Core from "../Core";
 import Footer from "../Footer";
+import Testimonial from "../Testimonial";
 
 
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     {
         path:"/core",
         element: <Core />
+    },
+    {
+        path: "/testimonial",
+        element: <Testimonial />
     },
     {
         path:"/footer",

@@ -20,6 +20,7 @@ const Header = () => {
           <Link to="about" smooth={true} duration={500} className="nav-text" onClick={() => scrollTo(900)}>About us</Link>
           <Link to="core" smooth={true} duration={500} className="nav-text">Our services</Link>
           <Link to="team" smooth={true} duration={500} className="nav-text">Our team</Link>
+          <Link to="testimonials" smooth={true} duration={500} className="nav-text">Testimonials</Link>
           <Link to="contact" smooth={true} duration={500} className="nav-button header-btn">Get in touch</Link>
         </div>
 
@@ -50,6 +51,7 @@ const Header = () => {
                     >About us</Link>
             <Link to="core" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Our services</Link>
             <Link to="team" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Our team</Link>
+            <Link to="testimonial" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Testimonials</Link>
             <Link to="contact" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Get in touch</Link>
             
           </div> 
