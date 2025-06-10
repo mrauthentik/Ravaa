@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { FaBars, FaRegTimesCircle } from "react-icons/fa";
 import { useScrollTo } from "react-screen-scroll";
@@ -12,14 +13,16 @@ const Header = () => {
       <nav>
         {/* Logo */}
         <div className="logo">
-          <img src={logo} alt="Logo" />
+          <RouterLink to='/'><img src={logo} alt="Logo" /></RouterLink>
+          
         </div>
 
         {/* Desktop Navigation */}
         <div className="nav-links">
-          <Link to="about" smooth={true} duration={500} className="nav-text" onClick={() => scrollTo(900)}>About us</Link>
-          <Link to="core" smooth={true} duration={500} className="nav-text">Our services</Link>
+         <Link to="about" smooth={true} duration={500} className="nav-text" onClick={() => scrollTo(900)}>About us</Link> 
+          <Link to="cores" smooth={true} duration={500} className="nav-text">Our services</Link>
           <Link to="team" smooth={true} duration={500} className="nav-text">Our team</Link>
+           <RouterLink to="/projects" className="nav-text">Projects</RouterLink>
           <Link to="testimonials" smooth={true} duration={500} className="nav-text">Testimonials</Link>
           <Link to="contact" smooth={true} duration={500} className="nav-button header-btn">Get in touch</Link>
         </div>
@@ -52,6 +55,7 @@ const Header = () => {
             <Link to="core" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Our services</Link>
             <Link to="team" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Our team</Link>
             <Link to="testimonial" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Testimonials</Link>
+            <RouterLink to="/projects" onClick={() => setIsOpen(false)}>Projects</RouterLink>
             <Link to="contact" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Get in touch</Link>
             
           </div> 

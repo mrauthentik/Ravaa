@@ -5,6 +5,8 @@ import Contact from "../Contact";
 import Core from "../Core";
 import Footer from "../Footer";
 import Testimonial from "../Testimonial";
+import Project from "../Project";
+import Layout from "../Layout";
 
 
 
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
         element: <Hero />
     },
     {
+        path:"/projects",
+        element: <Project />
+    },
+    {
+        path:"/",
+        element: <Layout />
+    },
+    {
         path:"/section",
         element: <Section />
     },
@@ -23,7 +33,7 @@ const router = createBrowserRouter([
         element: <Contact />
     },
     {
-        path:"/core",
+        path:"/cores",
         element: <Core />
     },
     {
@@ -34,6 +44,7 @@ const router = createBrowserRouter([
         path:"/footer",
         element: <Footer />
     },
+    
 ]);
 
 
