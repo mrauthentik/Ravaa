@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Header from './Header'
 import Hero from './Hero'
 import Section from './Section'
@@ -18,6 +19,8 @@ export default function Layout() {
     <Core id="cores" />
     <Team id="team"/>
     <Testimonial id='testimonial' />
+    <Link to='/projects'> <button className='layout-btn'>See More..</button></Link>
+     
     <Contact id="contact" />
     <Footer />
     </div>

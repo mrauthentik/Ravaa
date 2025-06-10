@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from "react-scroll";
+import { Link as RouterLink } from 'react-router-dom';
 import { useScrollTo } from 'react-screen-scroll';
 import logo from './assets/logo (2).png'
 const containerVariants = {
@@ -48,7 +49,7 @@ const Footer = ()=> {
             </motion.div>
             <motion.div className="footer-2" variants={textVariants}>
                 <motion.h1>Useful links</motion.h1>
-                <motion.p> <Link to='/' smooth={true} duration={500} onClick={()=>{scrollTo("smooth",0)}}>Home</Link></motion.p>
+                <motion.p> <RouterLink to='/' smooth={true} duration={500} onClick={()=>{scrollTo("smooth",0)}} className='footer-link-text'>Home</RouterLink></motion.p>
                 <motion.p> <Link to='about' smooth={true} duration={500} onClick={()=>{scrollTo("smooth",500)}} >About us</Link> </motion.p>
                 <motion.p> <Link to='core' smooth={true} duration={500} onClick={()=>{scrollTo("smooth",700)}}>Our services</Link> </motion.p>
                 <motion.p> <Link to='contact' smooth={true} duration={500} onClick={()=>{scrollTo("smooth",800)}}>Get in touch</Link> </motion.p>

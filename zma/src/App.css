@@ -14,6 +14,25 @@
   overflow-x: hidden;
 }
 
+.layout-btn{
+      background-color: var(--orange);
+      border: none;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      height: fit-content;
+      width: 150px;
+      font-size: 15px;
+      padding: 18px 10px ;
+      text-align: center;
+      font-family: var(--mona);
+      margin-left: 2rem;
+      }
+      .layout-btn:hover{
+        background-color: black;
+        transition: 0.4s ease-in-out;
+        color: white;
+      }
 /* Nav styles */
 
 nav{
@@ -535,6 +554,10 @@ textarea{
 /* Footer Logo */
 .footer-logo {
   margin-bottom: 3rem;
+}
+.footer-link-text{
+  color: white;
+  text-decoration: none;
 }
 
 /* Small Text */
@@ -1148,7 +1171,7 @@ nav {
   margin-bottom: 2rem;
   width: 100vw;
   overflow: hidden;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .slide {
@@ -1275,4 +1298,203 @@ nav {
     font-weight: 600;
     padding-bottom: 1rem;
   }
+}
+
+/* People Testimonial starts here  */
+.people-testimonials {
+  margin: 3rem 0;
+  text-align: center;
+   h2{
+    text-align: left;
+    color: var(--orange);
+    font-family: var(--mona);
+    padding-left: 2.5rem;
+    font-size: 32px;
+    margin-bottom: 3rem;
+    font-weight: 700;
+   }
+   .people-testimonials-text{
+     font-family: var(--mona);
+     padding-left: 2.5rem;
+     text-align: left;
+     width: 90%;
+     color: var(--dark);
+     margin-bottom: 2.5rem;
+     span{
+      color: var(--orange);
+      font-weight: 700;
+     }
+   }
+}
+
+.testimonial-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  height: 50vh;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Make testimonial cards bigger and responsive */
+.testimonial-card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 1rem;
+  /* box-shadow: 0 4px 16px #ee492430; */
+  padding: 1rem 1.5rem;
+  max-width: 1000px;
+  height: 50vh;
+  width: 100vw;
+  margin: 0 2rem;
+  display: flex;
+ gap: 20%;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--dark);
+  font-family: var(--mona);
+  transition: max-width 0.3s, padding 0.3s, font-size 0.3s;
+}
+
+.testimonial-card img {
+  width: 40%;
+  height: 120%;
+}
+
+/* @media (max-width: 900px) {
+  .testimonial-card {
+    max-width: 90vw;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+  .testimonial-card img {
+    width: 70px;
+    height: 70px;
+  }
+} */
+
+@media (max-width: 900px) {
+  .testimonial-card {
+    max-width: 95vw;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    min-height: 200px;
+  }
+  .quote{
+    margin-top: -1rem;
+    height: 60%;
+    font-weight: 600;
+  }
+  .testimonial-card img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-card {
+    max-width: 99vw;
+    padding: 1rem 0.5rem;
+    font-size: 0.95rem;
+    min-height: 140px;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-card img {
+    width: 70%;
+    height: 200%;
+  }
+}
+.testimonial-arrow {
+  background: rgba(0,0,0,0.07);
+  border: none;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.2s;
+  z-index: 2;
+}
+.testimonial-arrow:hover {
+  background: rgba(0,0,0,0.15);
+}
+.testimonial-arrow.left { margin-right: 0.5rem; }
+.testimonial-arrow.right { margin-left: 0.5rem; }
+
+.testimonial-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.testimonial-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.testimonial-dot.active {
+  background: var(--orange);
+}
+/* People Testimonial ends here */
+
+
+.partners{
+  margin-top: 2.5rem;
+  font-family: var(--mona);
+  padding-left: 2.5rem;
+  h3{
+    color: var(--orange);
+    font-size: 36px;
+    margin-bottom: 2rem;
+  }
+  p{
+    color: var(--dark);
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+  .partner-logos{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    gap: 20%;
+    margin-bottom: 2rem;
+    img{
+      width: 50%;
+      height: 30%;
+    }
+    .partner-img-cl{
+      height: 100px;
+      width: 150px;
+    }
+  }
+}
+@media (max-width: 600px){
+  .partners{
+    p{
+      width: 90%;
+    }
+  }
+  .partner-logos{
+    flex-direction: column;
+    /* height: 40vh; */
+    width: 100%;
+     img{
+      margin-bottom: 20px;
+     }
+     .partner-img-clt{
+      height: 50%;
+      width: 100%;
+     }
+  }
+
 }
