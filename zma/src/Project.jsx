@@ -178,7 +178,7 @@ useEffect(()=>{
         </p>
         <div className="partner-logos">
          <a href="https://wimbiz.org/"> <img src={partner} alt="Partner 1" className="partner-img-clt"/></a>
-         <a href="https://www.magnificentleadershipconference.com//"> <img src={sponsor} alt="Partner 2"  className="partner-img-cl"/></a>
+         <a href="https://www.magnificentleadershipconference.com/"> <img src={sponsor} alt="Partner 2"  className="partner-img-cl"/></a>
         </div>
       </div>
     </div>
