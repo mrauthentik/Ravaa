@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import Header from './Header'
 import Hero from './Hero'
 import Section from './Section'
@@ -10,6 +11,24 @@ import Contact from './Contact'
 import Testimonial from './Testimonial';
 
 export default function Layout() {
+  const location = useLocation()
+
+  useEffect(()=>{
+    if(location.hash){
+      const sectionId = location.hash.substring(1) //  this code is to remove the '#' from the hash
+      const element = document.getElementById(sectionId)
+
+      if(element){
+        setTimeout(()=>{
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        }, 100)
+      }
+    }
+  },[location.hash])
+
   return (
     <div className="layout">
      <Header />
