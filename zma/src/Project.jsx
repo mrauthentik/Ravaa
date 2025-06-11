@@ -71,7 +71,13 @@ const [testimonialIndex, setTestimonialIndex] = useState(0);
 
 useEffect(()=>{
     const timer = setInterval(()=> setIndex((prev)=> (prev + 1) % slides.length), AUTOPLAY_DELAY);
-    return () => clearInterval(timer);
+  const peopleTestimonialTimer = setInterval(() => {
+    setTestimonialIndex((prev) => (prev + 1) % peopleTestimonials.length);
+  }, AUTOPLAY_DELAY);
+    return () => {
+      clearInterval(timer);
+      clearInterval(peopleTestimonialTimer);
+    }
 },[])
 
   return (
