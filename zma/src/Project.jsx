@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Testimonial from "./Testimonial";
-import img1 from "./assets/women (1).jpg";
-import img2 from "./assets/women (2).jpg";
-import img3 from "./assets/women (3).jpg";
-import img4 from "./assets/testimonial/market (1).jpg"
-import img5 from "./assets/testimonial/market (2).jpg"
 import testimonial1 from "./assets/testimonial/testimonial (1).jpg";
 import testimonial2 from "./assets/testimonial/testimonial (2).jpg";
 import testimonial3 from "./assets/testimonial/testimonial (3).jpg";
@@ -19,23 +14,23 @@ import Footer from "./Footer";
 
 const slides = [
   {
-    img: img1,
+    img: "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1749648268/women_3_b5pa4j.jpg",
     text: "Empower your dreams. Inspire the world.",
   },
   {
-    img: img2,
+    img: "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1749648277/women_1_jdlvom.jpg",
     text: "Believe in yourself and all that you are.",
   },
   {
-    img: img3,
+    img: "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1749648331/women_2_cfb6io.jpg",
     text: "Every step forward is a step toward success.",
   },
   {
-    img: img4,
+    img: "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1749648395/market_1_xbopkt.jpg",
     text: "Putting Smiles on the faces of the People.",
   },
   {
-    img: img5,
+    img: "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1749648421/market_2_clql4b.jpg",
     text: "Every Opporunity to make Impact.",
   },
 ];

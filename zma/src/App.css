@@ -80,7 +80,7 @@ nav{
 
 /* Hero Section  */
 .hero{
-  background: linear-gradient(to left,rgba(0, 0, 0, 0.868), rgba(0, 0, 0, 0.732)), url('./assets/pic (1).JPG');
+  background: linear-gradient(to left,rgba(0, 0, 0, 0.868), rgba(0, 0, 0, 0.732)), url('https://res.cloudinary.com/dnjfc8uhs/image/upload/v1749648043/img_4_mmh0hh.png');
   height: 150vh;
   color: white;
   padding: 35vh ;
