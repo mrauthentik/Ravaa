@@ -117,73 +117,101 @@ useEffect(()=>{
           </div>
       </div>
         <div className="project-content">
-            <h2>Our Projects</h2>
-            <p>
-            We are committed to delivering exceptional projects that make a
-            difference. Our team works tirelessly to ensure that every project is
-            executed with precision and excellence.
-            </p>
-            <p>
-            From innovative designs to sustainable solutions, we strive to exceed
-            expectations and create lasting impact.
-            </p>
-          </div>  
-      <Testimonial />
-     
+          <h2>Project Milestones</h2>
+          <ul className="milestone-list">
+            <li>
+              <strong>WimBiz Conference Sponsorship (2024):</strong>
+              <ul>
+                <li>Sponsored 20 women from diverse industries and backgrounds to attend the WimBiz Conference, themed <span>&apos;Dream. Dare. Do.&apos;</span></li>
+                <li>Comprehensive sponsorship covered conference registration, return tickets, accommodation, and meals.</li>
+                <li>Enabled participants to focus on personal and professional growth without logistical worries.</li>
+                <li>Event featured inspiring keynotes, interactive workshops, and thought-provoking panel discussions.</li>
+                <li>Fostered a supportive network for collaboration, innovation, and progress among women.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Empowerment Initiatives:</strong>
+              <ul>
+                <li>Delivered exceptional projects aimed at empowering women and supporting local businesses.</li>
+                <li>Provided guidance, resources, and equipment to help women-owned businesses grow and thrive.</li>
+                <li>Created opportunities for skill development and entrepreneurship.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Strategic Partnerships:</strong>
+              <ul>
+                <li>Collaborated with organizations such as WimBiz and Magnificent Leadership Conference to amplify impact.</li>
+                <li>Built a network of partners committed to positive change and community development.</li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+        <Testimonial />
         <div className="people-testimonials">
-        <h2>What People Say</h2>
-        <div className="people-testimonials-text">
-             <p>Zen AMA GSD proudly sponsored 20 women from diverse industries and backgrounds to attend the WimBiz Conference, 
-           <span>&apos;Dream. Dare. Do. &apos; </span> <br />
-            The comprehensive sponsorship covered conference registration, return tickets, accommodation, and meals ensuring the women could focus on personal and professional growth without logistical worries. 
-            This empowering event featured inspiring keynotes, interactive workshops, and thought-provoking panel discussions, all designed to ignite personal and professional growth.
-             By bringing together women from various walks of life, the conference fostered a supportive network for collaboration, innovation, and progress.</p>
-        </div>
-        
-        <div className="testimonial-slider">
-            {/* <button className="testimonial-arrow left" onClick={prevTestimonial}>&lt;</button> */}
-            <AnimatePresence mode="wait">
-            <motion.div
-                key={testimonialIndex}
-                className="testimonial-card"
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5 }}
-            >
-                <img src={peopleTestimonials[testimonialIndex].img} alt={`Testimonial ${testimonialIndex + 1}`} />
-                <p className="quote">&quot;{peopleTestimonials[testimonialIndex].text}&quot;</p>
-            </motion.div>
-            </AnimatePresence>
-            {/* <button className="testimonial-arrow right" onClick={nextTestimonial}>&gt;</button> */}
-        </div>
-        <div className="testimonial-pagination">
-            {peopleTestimonials.map((_, i) => (
-            <button
-                key={i}
-                className={`testimonial-dot${i === testimonialIndex ? " active" : ""}`}
-                onClick={() => setTestimonialIndex(i)}
-                aria-label={`Go to testimonial ${i + 1}`}
-            />
-            ))}
-        </div>
+          <h2>What People Say</h2>
+         
+          
+          <div className="testimonial-slider">
+              {/* <button className="testimonial-arrow left" onClick={prevTestimonial}>&lt;</button> */}
+              <AnimatePresence mode="wait">
+              <motion.div
+                  key={testimonialIndex}
+                  className="testimonial-card"
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.5 }}
+              >
+                  <img src={peopleTestimonials[testimonialIndex].img} alt={`Testimonial ${testimonialIndex + 1}`} />
+                  <p className="quote">&quot;{peopleTestimonials[testimonialIndex].text}&quot;</p>
+              </motion.div>
+              </AnimatePresence>
+              {/* <button className="testimonial-arrow right" onClick={nextTestimonial}>&gt;</button> */}
+          </div>
+          <div className="testimonial-pagination">
+              {peopleTestimonials.map((_, i) => (
+              <button
+                  key={i}
+                  className={`testimonial-dot${i === testimonialIndex ? " active" : ""}`}
+                  onClick={() => setTestimonialIndex(i)}
+                  aria-label={`Go to testimonial ${i + 1}`}
+              />
+              ))}
+          </div>
         </div>
        
-      <div className="partners">
-        <h3>Our Partners</h3>
-        <p>
-          We are proud to collaborate with a diverse range of partners who share
-          our vision for positive change. Together, we are making a difference in
-          communities around the world.
-        </p>
-        <div className="partner-logos">
-         <a href="https://wimbiz.org/"> <img src={partner} alt="Partner 1" className="partner-img-clt"/></a>
-         <a href="https://www.magnificentleadershipconference.com/"> <img src={sponsor} alt="Partner 2"  className="partner-img-cl"/></a>
+        <div className="partners">
+          <h3>Our Partners</h3>
+          <p>
+            We are proud to collaborate with a diverse range of partners who share
+            our vision for positive change. Together, we are making a difference in
+            communities around the world.
+          </p>
+          <div className="partner-logos">
+            <div className="partner-item">
+              <a href="https://wimbiz.org/">
+                <img src={partner} alt="WimBiz" className="partner-img-clt" />
+              </a>
+              <div className="partner-info">
+                <div className="partner-name">WimBiz</div>
+                <div className="partner-desc">A leading non-profit organization focused on empowering women in business, management, and public service.</div>
+              </div>
+            </div>
+            <div className="partner-item">
+              <a href="https://www.magnificentleadershipconference.com">
+                <img src={sponsor} alt="Magnificent Leadership Conference" className="partner-img-cl" />
+              </a>
+              <div className="partner-info">
+                <div className="partner-name">Magnificent Leadership Conference</div>
+                <div className="partner-desc">An annual event dedicated to inspiring and equipping leaders for positive change and impact.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
       <Footer />
-     </div>
+    </div>
   );
 };
 
