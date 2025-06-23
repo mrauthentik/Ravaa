@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Testimonial from "./Testimonial";
+// import Testimonial from "./Testimonial";
 import testimonial1 from "./assets/testimonial/testimonial (1).jpg";
 import testimonial2 from "./assets/testimonial/testimonial (2).jpg";
 import testimonial3 from "./assets/testimonial/testimonial (3).jpg";
