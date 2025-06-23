@@ -120,7 +120,7 @@ useEffect(()=>{
           <h2>Project Milestones</h2>
           <ul className="milestone-list">
             <li>
-              <strong>WimBiz Conference Sponsorship (2024):</strong>
+              <h3>WimBiz Conference Sponsorship (2024):</h3>
               <ul>
                 <li>Sponsored 20 women from diverse industries and backgrounds to attend the WimBiz Conference, themed <span>&apos;Dream. Dare. Do.&apos;</span></li>
                 <li>Comprehensive sponsorship covered conference registration, return tickets, accommodation, and meals.</li>
@@ -130,7 +130,7 @@ useEffect(()=>{
               </ul>
             </li>
             <li>
-              <strong>Empowerment Initiatives:</strong>
+              <h3>Empowerment Initiatives:</h3>
               <ul>
                 <li>Delivered exceptional projects aimed at empowering women and supporting local businesses.</li>
                 <li>Provided guidance, resources, and equipment to help women-owned businesses grow and thrive.</li>
@@ -138,7 +138,7 @@ useEffect(()=>{
               </ul>
             </li>
             <li>
-              <strong>Strategic Partnerships:</strong>
+              <h3>Strategic Partnerships:</h3>
               <ul>
                 <li>Collaborated with organizations such as WimBiz and Magnificent Leadership Conference to amplify impact.</li>
                 <li>Built a network of partners committed to positive change and community development.</li>
@@ -147,9 +147,9 @@ useEffect(()=>{
           </ul>
           
         </div>
-        <Testimonial />
+     
         <div className="people-testimonials">
-          <h2>What People Say</h2>
+          <h2>Testimonials</h2>
          
           
           <div className="testimonial-slider">

@@ -1290,13 +1290,23 @@ nav {
 
 .project-content{
   padding: 2rem;
+  margin: 2rem;
   font-family: var(--mona);
   color: var(--dark);
   h2{
     color: var(--orange);
+    text-align: left;
+    color: var(--orange);
+    font-family: var(--mona);
+    padding-left: 0rem;
     font-size: 32px;
-    font-weight: 600;
-    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+  }
+  ul{
+    li{
+      font-size: 20px;
+    }
   }
 }
 
@@ -1571,11 +1581,11 @@ nav {
 }
 
 .milestone-list{
-   strong{
+   h3{
     font-size: 20px;
     font-weight: 600;
     color: var(--orange);
-    margin: 1.4rem 0;
+    margin: 1rem 0;
    }
    ul{
     list-style: none;
