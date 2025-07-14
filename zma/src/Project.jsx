@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Testimonial from "./Testimonial";
+// import Testimonial from "./Testimonial";
 import testimonial1 from "./assets/testimonial/testimonial (1).jpg";
 import testimonial2 from "./assets/testimonial/testimonial (2).jpg";
 import testimonial3 from "./assets/testimonial/testimonial (3).jpg";
@@ -71,7 +71,13 @@ const [testimonialIndex, setTestimonialIndex] = useState(0);
 
 useEffect(()=>{
     const timer = setInterval(()=> setIndex((prev)=> (prev + 1) % slides.length), AUTOPLAY_DELAY);
-    return () => clearInterval(timer);
+  const peopleTestimonialTimer = setInterval(() => {
+    setTestimonialIndex((prev) => (prev + 1) % peopleTestimonials.length);
+  }, AUTOPLAY_DELAY);
+    return () => {
+      clearInterval(timer);
+      clearInterval(peopleTestimonialTimer);
+    }
 },[])
 
   return (
@@ -111,56 +117,68 @@ useEffect(()=>{
           </div>
       </div>
         <div className="project-content">
-            <h2>Our Projects</h2>
-            <p>
-            We are committed to delivering exceptional projects that make a
-            difference. Our team works tirelessly to ensure that every project is
-            executed with precision and excellence.
-            </p>
-            <p>
-            From innovative designs to sustainable solutions, we strive to exceed
-            expectations and create lasting impact.
-            </p>
-          </div>  
-      <Testimonial />
+          <h2>Project Milestones</h2>
+          <ul className="milestone-list">
+            <li>
+              <h3>WimBiz Conference Sponsorship (2024):</h3>
+              <ul>
+                <li>Sponsored 20 women from diverse industries and backgrounds to attend the WimBiz Conference, themed <span>&apos;Dream. Dare. Do.&apos;</span></li>
+                <li>Comprehensive sponsorship covered conference registration, return tickets, accommodation, and meals.</li>
+                <li>Enabled participants to focus on personal and professional growth without logistical worries.</li>
+                <li>Event featured inspiring keynotes, interactive workshops, and thought-provoking panel discussions.</li>
+                <li>Fostered a supportive network for collaboration, innovation, and progress among women.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Empowerment Initiatives:</h3>
+              <ul>
+                <li>Delivered exceptional projects aimed at empowering women and supporting local businesses.</li>
+                <li>Provided guidance, resources, and equipment to help women-owned businesses grow and thrive.</li>
+                <li>Created opportunities for skill development and entrepreneurship.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Strategic Partnerships:</h3>
+              <ul>
+                <li>Collaborated with organizations such as WimBiz and Magnificent Leadership Conference to amplify impact.</li>
+                <li>Built a network of partners committed to positive change and community development.</li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
      
         <div className="people-testimonials">
-        <h2>What People Say</h2>
-        <div className="people-testimonials-text">
-             <p>Zen AMA GSD proudly sponsored 20 women from diverse industries and backgrounds to attend the WimBiz Conference, 
-           <span>&apos;Dream. Dare. Do. &apos; </span> <br />
-            The comprehensive sponsorship covered conference registration, return tickets, accommodation, and meals ensuring the women could focus on personal and professional growth without logistical worries. 
-            This empowering event featured inspiring keynotes, interactive workshops, and thought-provoking panel discussions, all designed to ignite personal and professional growth.
-             By bringing together women from various walks of life, the conference fostered a supportive network for collaboration, innovation, and progress.</p>
-        </div>
-        
-        <div className="testimonial-slider">
-            {/* <button className="testimonial-arrow left" onClick={prevTestimonial}>&lt;</button> */}
-            <AnimatePresence mode="wait">
-            <motion.div
-                key={testimonialIndex}
-                className="testimonial-card"
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5 }}
-            >
-                <img src={peopleTestimonials[testimonialIndex].img} alt={`Testimonial ${testimonialIndex + 1}`} />
-                <p className="quote">&quot;{peopleTestimonials[testimonialIndex].text}&quot;</p>
-            </motion.div>
-            </AnimatePresence>
-            {/* <button className="testimonial-arrow right" onClick={nextTestimonial}>&gt;</button> */}
-        </div>
-        <div className="testimonial-pagination">
-            {peopleTestimonials.map((_, i) => (
-            <button
-                key={i}
-                className={`testimonial-dot${i === testimonialIndex ? " active" : ""}`}
-                onClick={() => setTestimonialIndex(i)}
-                aria-label={`Go to testimonial ${i + 1}`}
-            />
-            ))}
-        </div>
+          <h2>Testimonials</h2>
+         
+          
+          <div className="testimonial-slider">
+              {/* <button className="testimonial-arrow left" onClick={prevTestimonial}>&lt;</button> */}
+              <AnimatePresence mode="wait">
+              <motion.div
+                  key={testimonialIndex}
+                  className="testimonial-card"
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.5 }}
+              >
+                  <img src={peopleTestimonials[testimonialIndex].img} alt={`Testimonial ${testimonialIndex + 1}`} />
+                  <p className="quote">&quot;{peopleTestimonials[testimonialIndex].text}&quot;</p>
+              </motion.div>
+              </AnimatePresence>
+              {/* <button className="testimonial-arrow right" onClick={nextTestimonial}>&gt;</button> */}
+          </div>
+          <div className="testimonial-pagination">
+              {peopleTestimonials.map((_, i) => (
+              <button
+                  key={i}
+                  className={`testimonial-dot${i === testimonialIndex ? " active" : ""}`}
+                  onClick={() => setTestimonialIndex(i)}
+                  aria-label={`Go to testimonial ${i + 1}`}
+              />
+              ))}
+          </div>
         </div>
        
       <div className="partners">
@@ -176,9 +194,10 @@ useEffect(()=>{
          <a href="https://www.magnificentleadershipconference.com//"> <img src={sponsor} alt="Partner 2"  className="partner-img-cl"/></a>
         </div>
       </div>
-    </div>
       <Footer />
-     </div>
+    </div>
+
+    </div>
   );
 };
 
